@@ -34,7 +34,7 @@ end
 get("/wizard multiply") do
   @first_num = params.fetch("first_number").to_f
   @second_num = params.fetch("second_number").to_f
-  @result = @second_num ** @first_num
+  @result = @second_num * @first_num
   erb(:mult_result)
 end
 
